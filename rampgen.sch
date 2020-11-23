@@ -898,8 +898,8 @@ Text Notes 7600 3350 0    50   ~ 0
 unity gain buffer \nfor ramp output
 Text Notes 7300 3700 0    50   ~ 0
 3V reference\nis divided\nto 1V
-Text Notes 5150 4250 0    50   ~ 0
-1kHz square wave\ngenerator, triggered\nby a frequency divider\n(another integrator)
+Text Notes 5150 4350 0    50   ~ 0
+1kHz square wave\ngenerator, triggered\nby a frequency divider\n
 Text Notes 3800 6050 0    50   ~ 0
 positive pulse\nholds the divider\nintegrator low
 Text Notes 2850 4450 0    50   ~ 0
@@ -1332,4 +1332,28 @@ F 3 "~" H 3350 5400 50  0001 C CNN
 	1    3350 5400
 	0    1    1    0   
 $EndComp
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5FBC30CE
+P 8500 2500
+F 0 "TP7" H 8558 2618 50  0000 L CNN
+F 1 "RAMP_OUT" H 8558 2527 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.5x2.5mm_Drill1.2mm" H 8700 2500 50  0001 C CNN
+F 3 "~" H 8700 2500 50  0001 C CNN
+	1    8500 2500
+	1    0    0    -1  
+$EndComp
+Connection ~ 8500 2500
+$Comp
+L Connector:TestPoint TP8
+U 1 1 5FBC39F3
+P 8500 4600
+F 0 "TP8" H 8558 4718 50  0000 L CNN
+F 1 "1V_OUT" H 8558 4627 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.5x2.5mm_Drill1.2mm" H 8700 4600 50  0001 C CNN
+F 3 "~" H 8700 4600 50  0001 C CNN
+	1    8500 4600
+	1    0    0    -1  
+$EndComp
+Connection ~ 8500 4600
 $EndSCHEMATC
