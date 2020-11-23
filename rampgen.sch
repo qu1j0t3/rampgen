@@ -237,12 +237,12 @@ $EndComp
 $Comp
 L Device:R_POT_TRIM RV1
 U 1 1 5FB65072
-P 800 2500
-F 0 "RV1" H 730 2546 50  0000 R CNN
-F 1 "1k" H 730 2455 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_3299P_Horizontal" H 800 2500 50  0001 C CNN
-F 3 "~" H 800 2500 50  0001 C CNN
-	1    800  2500
+P 650 2650
+F 0 "RV1" H 580 2696 50  0000 R CNN
+F 1 "1k" H 580 2605 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3299P_Horizontal" H 650 2650 50  0001 C CNN
+F 3 "~" H 650 2650 50  0001 C CNN
+	1    650  2650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -261,12 +261,12 @@ Wire Wire Line
 $Comp
 L power:+5V #PWR0108
 U 1 1 5FB68BEC
-P 950 1800
-F 0 "#PWR0108" H 950 1650 50  0001 C CNN
-F 1 "+5V" H 965 1973 50  0000 C CNN
-F 2 "" H 950 1800 50  0001 C CNN
-F 3 "" H 950 1800 50  0001 C CNN
-	1    950  1800
+P 650 2000
+F 0 "#PWR0108" H 650 1850 50  0001 C CNN
+F 1 "+5V" H 665 2173 50  0000 C CNN
+F 2 "" H 650 2000 50  0001 C CNN
+F 3 "" H 650 2000 50  0001 C CNN
+	1    650  2000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -384,7 +384,7 @@ F 3 "~" H 800 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	800  2300 800  2350
+	650  2450 650  2500
 Wire Wire Line
 	800  2650 800  2750
 Wire Wire Line
@@ -405,18 +405,16 @@ Connection ~ 1150 3900
 $Comp
 L Device:R R7
 U 1 1 5FBDDC12
-P 950 2100
-F 0 "R7" H 1020 2146 50  0000 L CNN
-F 1 "100" H 1020 2055 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 880 2100 50  0001 C CNN
-F 3 "~" H 950 2100 50  0001 C CNN
-	1    950  2100
+P 650 2300
+F 0 "R7" H 720 2346 50  0000 L CNN
+F 1 "100" H 720 2255 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 580 2300 50  0001 C CNN
+F 3 "~" H 650 2300 50  0001 C CNN
+	1    650  2300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	950  1800 950  1950
-Wire Wire Line
-	950  2250 950  2500
+	650  2000 650  2150
 $Comp
 L Transistor_FET:2N7000 Q4
 U 1 1 5FBE2D57
@@ -453,11 +451,9 @@ $EndComp
 Wire Wire Line
 	5050 5150 4600 5150
 Wire Wire Line
-	4050 5150 4050 5300
-Wire Wire Line
 	4600 5800 4600 5750
 Wire Wire Line
-	4600 5350 4600 5150
+	4600 5350 4600 5300
 Connection ~ 4600 5150
 Wire Wire Line
 	4050 5700 4050 5750
@@ -560,23 +556,23 @@ $EndComp
 $Comp
 L Device:R_POT_TRIM RV4
 U 1 1 5FC47A3D
-P 4700 3750
-F 0 "RV4" H 4630 3796 50  0000 R CNN
-F 1 "50k" H 4630 3705 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical" H 4700 3750 50  0001 C CNN
-F 3 "~" H 4700 3750 50  0001 C CNN
-	1    4700 3750
+P 4550 3900
+F 0 "RV4" H 4480 3946 50  0000 R CNN
+F 1 "50k" H 4480 3855 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical" H 4550 3900 50  0001 C CNN
+F 3 "~" H 4550 3900 50  0001 C CNN
+	1    4550 3900
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR0119
 U 1 1 5FC332BA
-P 4850 3500
-F 0 "#PWR0119" H 4850 3350 50  0001 C CNN
-F 1 "+5V" H 4865 3673 50  0000 C CNN
-F 2 "" H 4850 3500 50  0001 C CNN
-F 3 "" H 4850 3500 50  0001 C CNN
-	1    4850 3500
+P 4550 3500
+F 0 "#PWR0119" H 4550 3350 50  0001 C CNN
+F 1 "+5V" H 4565 3673 50  0000 C CNN
+F 2 "" H 4550 3500 50  0001 C CNN
+F 3 "" H 4550 3500 50  0001 C CNN
+	1    4550 3500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -698,7 +694,7 @@ Wire Wire Line
 Wire Wire Line
 	3100 5300 3100 5400
 Wire Wire Line
-	3100 5400 3600 5400
+	3100 5400 3200 5400
 Wire Wire Line
 	3600 5400 3600 5300
 Connection ~ 3100 5400
@@ -718,11 +714,6 @@ F 3 "~" H 7350 4000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7350 3800 7350 3850
-Connection ~ 7000 3800
-Wire Wire Line
-	7350 3800 7000 3800
-Wire Wire Line
-	7000 3750 7000 3800
 $Comp
 L Device:R R11
 U 1 1 5FCAB919
@@ -733,52 +724,6 @@ F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7280 4300
 F 3 "~" H 7350 4300 50  0001 C CNN
 	1    7350 4300
 	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7000 3400 7000 3450
-$Comp
-L power:GND #PWR0121
-U 1 1 5FC86CD8
-P 7000 4200
-F 0 "#PWR0121" H 7000 3950 50  0001 C CNN
-F 1 "GND" H 7005 4027 50  0000 C CNN
-F 2 "" H 7000 4200 50  0001 C CNN
-F 3 "" H 7000 4200 50  0001 C CNN
-	1    7000 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0120
-U 1 1 5FC86CD1
-P 7000 3400
-F 0 "#PWR0120" H 7000 3250 50  0001 C CNN
-F 1 "+5V" H 7015 3573 50  0000 C CNN
-F 2 "" H 7000 3400 50  0001 C CNN
-F 3 "" H 7000 3400 50  0001 C CNN
-	1    7000 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R9
-U 1 1 5FC86CCB
-P 7000 3600
-F 0 "R9" H 7070 3646 50  0000 L CNN
-F 1 "4.7k" H 7070 3555 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6930 3600 50  0001 C CNN
-F 3 "~" H 7000 3600 50  0001 C CNN
-	1    7000 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Reference_Voltage:LM4040LP-3 U5
-U 1 1 5FC86CC5
-P 7000 3950
-F 0 "U5" H 7000 4166 50  0000 C CNN
-F 1 "LM4040LP-3" H 7000 4075 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 7000 3750 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/lm4040-n.pdf" H 7000 3950 50  0001 C CIN
-	1    7000 3950
-	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	2800 5100 2750 5100
@@ -861,8 +806,6 @@ Wire Wire Line
 Wire Wire Line
 	6450 4750 6450 6150
 Wire Wire Line
-	7000 4100 7000 4200
-Wire Wire Line
 	3700 900  4100 900 
 Wire Wire Line
 	4100 900  4100 750 
@@ -922,7 +865,7 @@ Wire Wire Line
 Wire Wire Line
 	5050 4350 5050 4850
 Wire Wire Line
-	4850 3750 4850 3500
+	4550 3750 4550 3500
 $Comp
 L Device:R R13
 U 1 1 5FD5EEFE
@@ -1095,32 +1038,12 @@ Wire Wire Line
 	1850 950  1850 1100
 Wire Wire Line
 	1850 1200 1850 1350
-Text Notes 5700 2300 0    50   ~ 0
+Text Notes 6400 3150 0    50   ~ 0
 NB to cope with slew rate \nof buffer as low as 0.6V/µs,\ndischarge R should be >=1111Ω\nand reset pulse needs to be \nat least 9µs i.e. Rt = 9kΩ\n
 Wire Wire Line
 	7350 4450 7350 4500
-Wire Wire Line
-	6450 4750 6700 4750
 Text Notes 7600 5450 0    50   ~ 0
 unity gain buffer\nfor square wave
-Wire Wire Line
-	7000 4950 7000 5000
-Wire Wire Line
-	7000 4500 7350 4500
-$Comp
-L Connector:TestPoint TP6
-U 1 1 5FCD1454
-P 7000 4500
-F 0 "TP6" H 7058 4618 50  0000 L CNN
-F 1 "1V" H 7058 4527 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_2.5x2.5mm_Drill1.2mm" H 7200 4500 50  0001 C CNN
-F 3 "~" H 7200 4500 50  0001 C CNN
-	1    7000 4500
-	1    0    0    -1  
-$EndComp
-Connection ~ 7000 4500
-Wire Wire Line
-	7000 4550 7000 4500
 Wire Wire Line
 	7600 4700 7600 5200
 Connection ~ 7350 4500
@@ -1220,17 +1143,6 @@ Wire Wire Line
 	7350 4500 7750 4500
 Connection ~ 8350 4600
 $Comp
-L Transistor_FET:2N7000 Q5
-U 1 1 5FCAC460
-P 6900 4750
-F 0 "Q5" H 7104 4796 50  0000 L CNN
-F 1 "2N7000" H 6550 4600 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7100 4675 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 6900 4750 50  0001 L CNN
-	1    6900 4750
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R12
 U 1 1 5FCABD78
 P 7350 4750
@@ -1253,19 +1165,12 @@ F 3 "" H 7350 5050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7350 4900 7350 5000
-Wire Wire Line
 	7350 4500 7350 4600
-Wire Wire Line
-	7000 5000 7350 5000
-Connection ~ 7350 5000
-Wire Wire Line
-	7350 5000 7350 5050
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 600A81CC
 P 750 850
-F 0 "H1" H 850 896 50  0000 L CNN
+F 0 "H1" H 850 896 50  0001 L CNN
 F 1 "MountingHole" H 850 805 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 750 850 50  0001 C CNN
 F 3 "~" H 750 850 50  0001 C CNN
@@ -1276,7 +1181,7 @@ $Comp
 L Mechanical:MountingHole H2
 U 1 1 600A8BD6
 P 750 1100
-F 0 "H2" H 850 1146 50  0000 L CNN
+F 0 "H2" H 850 1146 50  0001 L CNN
 F 1 "MountingHole" H 850 1055 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 750 1100 50  0001 C CNN
 F 3 "~" H 750 1100 50  0001 C CNN
@@ -1287,7 +1192,7 @@ $Comp
 L Mechanical:MountingHole H3
 U 1 1 600A9115
 P 1100 850
-F 0 "H3" H 1200 896 50  0000 L CNN
+F 0 "H3" H 1200 896 50  0001 L CNN
 F 1 "MountingHole" H 1200 805 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 1100 850 50  0001 C CNN
 F 3 "~" H 1100 850 50  0001 C CNN
@@ -1298,11 +1203,133 @@ $Comp
 L Mechanical:MountingHole H4
 U 1 1 600A9621
 P 1100 1100
-F 0 "H4" H 1200 1146 50  0000 L CNN
+F 0 "H4" H 1200 1146 50  0001 L CNN
 F 1 "MountingHole" H 1200 1055 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 1100 1100 50  0001 C CNN
 F 3 "~" H 1100 1100 50  0001 C CNN
 	1    1100 1100
 	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 5FBB1C80
+P 4350 5300
+F 0 "R14" V 4143 5300 50  0000 C CNN
+F 1 "47" V 4234 5300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4280 5300 50  0001 C CNN
+F 3 "~" H 4350 5300 50  0001 C CNN
+	1    4350 5300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4050 5300 4200 5300
+Wire Wire Line
+	4500 5300 4600 5300
+Connection ~ 4600 5300
+Wire Wire Line
+	4600 5300 4600 5150
+Connection ~ 7350 5000
+Wire Wire Line
+	7350 5000 7350 5050
+Wire Wire Line
+	7350 4900 7350 5000
+Wire Wire Line
+	6450 4750 6700 4750
+Wire Wire Line
+	7000 5000 7350 5000
+$Comp
+L Transistor_FET:2N7000 Q5
+U 1 1 5FCAC460
+P 6900 4750
+F 0 "Q5" H 7104 4796 50  0000 L CNN
+F 1 "2N7000" H 6550 4600 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7100 4675 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 6900 4750 50  0001 L CNN
+	1    6900 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 4550 7000 4500
+Connection ~ 7000 4500
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5FCD1454
+P 7000 4500
+F 0 "TP6" H 7058 4618 50  0000 L CNN
+F 1 "1V" H 7058 4527 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.5x2.5mm_Drill1.2mm" H 7200 4500 50  0001 C CNN
+F 3 "~" H 7200 4500 50  0001 C CNN
+	1    7000 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 4500 7350 4500
+Wire Wire Line
+	7000 4950 7000 5000
+Wire Wire Line
+	7000 4100 7000 4200
+$Comp
+L Reference_Voltage:LM4040LP-3 U5
+U 1 1 5FC86CC5
+P 7000 3950
+F 0 "U5" H 7000 4166 50  0000 C CNN
+F 1 "LM4040LP-3" H 7000 4075 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 7000 3750 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm4040-n.pdf" H 7000 3950 50  0001 C CIN
+	1    7000 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5FC86CCB
+P 7000 3600
+F 0 "R9" H 7070 3646 50  0000 L CNN
+F 1 "4.7k" H 7070 3555 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6930 3600 50  0001 C CNN
+F 3 "~" H 7000 3600 50  0001 C CNN
+	1    7000 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0120
+U 1 1 5FC86CD1
+P 7000 3400
+F 0 "#PWR0120" H 7000 3250 50  0001 C CNN
+F 1 "+5V" H 7015 3573 50  0000 C CNN
+F 2 "" H 7000 3400 50  0001 C CNN
+F 3 "" H 7000 3400 50  0001 C CNN
+	1    7000 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0121
+U 1 1 5FC86CD8
+P 7000 4200
+F 0 "#PWR0121" H 7000 3950 50  0001 C CNN
+F 1 "GND" H 7005 4027 50  0000 C CNN
+F 2 "" H 7000 4200 50  0001 C CNN
+F 3 "" H 7000 4200 50  0001 C CNN
+	1    7000 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 3400 7000 3450
+Wire Wire Line
+	7000 3750 7000 3800
+Wire Wire Line
+	7350 3800 7000 3800
+Connection ~ 7000 3800
+Wire Wire Line
+	3500 5400 3600 5400
+$Comp
+L Device:R R15
+U 1 1 5FBD3FA1
+P 3350 5400
+F 0 "R15" V 3143 5400 50  0000 C CNN
+F 1 "3.3k" V 3234 5400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3280 5400 50  0001 C CNN
+F 3 "~" H 3350 5400 50  0001 C CNN
+	1    3350 5400
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
