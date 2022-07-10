@@ -171,7 +171,7 @@ L Device:R R4
 U 1 1 5FB5D5D6
 P 5950 2400
 F 0 "R4" V 5743 2400 50  0000 C CNN
-F 1 "47" V 5834 2400 50  0000 C CNN
+F 1 "1.6k" V 5834 2400 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5880 2400 50  0001 C CNN
 F 3 "~" H 5950 2400 50  0001 C CNN
 	1    5950 2400
@@ -239,7 +239,7 @@ L Device:R_POT_TRIM RV1
 U 1 1 5FB65072
 P 650 2650
 F 0 "RV1" H 580 2696 50  0000 R CNN
-F 1 "1k" H 580 2605 50  0000 R CNN
+F 1 "5k" H 580 2605 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Bourns_3299P_Horizontal" H 650 2650 50  0001 C CNN
 F 3 "~" H 650 2650 50  0001 C CNN
 	1    650  2650
@@ -285,7 +285,7 @@ L Device:C C2
 U 1 1 5FB5F214
 P 1300 3350
 F 0 "C2" H 1415 3396 50  0000 L CNN
-F 1 "100n" H 1200 3600 50  0000 L CNN
+F 1 ".01u" H 1200 3600 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 1338 3200 50  0001 C CNN
 F 3 "~" H 1300 3350 50  0001 C CNN
 	1    1300 3350
@@ -372,17 +372,6 @@ Wire Wire Line
 	4100 900  4100 950 
 Wire Wire Line
 	5350 1150 5350 1450
-$Comp
-L Device:R R6
-U 1 1 5FBC7279
-P 800 2950
-F 0 "R6" H 870 2996 50  0000 L CNN
-F 1 "5.6k" H 870 2905 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 730 2950 50  0001 C CNN
-F 3 "~" H 800 2950 50  0001 C CNN
-	1    800  2950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	650  2450 650  2500
 Wire Wire Line
@@ -407,7 +396,7 @@ L Device:R R7
 U 1 1 5FBDDC12
 P 650 2300
 F 0 "R7" H 720 2346 50  0000 L CNN
-F 1 "100" H 720 2255 50  0000 L CNN
+F 1 "470" H 720 2255 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 580 2300 50  0001 C CNN
 F 3 "~" H 650 2300 50  0001 C CNN
 	1    650  2300
@@ -558,7 +547,7 @@ L Device:R_POT_TRIM RV4
 U 1 1 5FC47A3D
 P 4550 3900
 F 0 "RV4" H 4480 3946 50  0000 R CNN
-F 1 "50k" H 4480 3855 50  0000 R CNN
+F 1 "10k" H 4480 3855 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical" H 4550 3900 50  0001 C CNN
 F 3 "~" H 4550 3900 50  0001 C CNN
 	1    4550 3900
@@ -579,7 +568,7 @@ $Comp
 L Connector:TestPoint TP1
 U 1 1 5FC6D5AE
 P 2750 3000
-F 0 "TP1" H 2808 3118 50  0000 L CNN
+F 0 "TP1" H 2700 3250 50  0000 L CNN
 F 1 "CLOCK" H 2808 3027 50  0000 L CNN
 F 2 "TestPoint:TestPoint_THTPad_2.5x2.5mm_Drill1.2mm" H 2950 3000 50  0001 C CNN
 F 3 "~" H 2950 3000 50  0001 C CNN
@@ -871,7 +860,7 @@ L Device:R R13
 U 1 1 5FD5EEFE
 P 4700 4100
 F 0 "R13" H 4770 4146 50  0000 L CNN
-F 1 "10k" H 4770 4055 50  0000 L CNN
+F 1 "27k" H 4770 4055 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4630 4100 50  0001 C CNN
 F 3 "~" H 4700 4100 50  0001 C CNN
 	1    4700 4100
@@ -892,7 +881,7 @@ Wire Wire Line
 	4700 4750 4700 4950
 Text Notes 4550 2950 0    50   ~ 0
 1µs pulse generator\nat 5 kHz, to reset\nthe ramp integrator\n
-Text Notes 6500 1850 0    50   ~ 0
+Text Notes 6400 2000 0    50   ~ 0
 constant current \nsource for ramp 
 Text Notes 7600 3350 0    50   ~ 0
 unity gain buffer \nfor ramp output
@@ -938,7 +927,7 @@ F 3 " ~" H 8700 2500 50  0001 C CNN
 	1    8700 2500
 	1    0    0    -1  
 $EndComp
-Text Notes 1050 2450 0    50   ~ 0
+Text Notes 950  2650 0    50   ~ 0
 trimmed\nfor 5kHz
 Text Notes 2550 1950 0    50   ~ 0
 multivibrator\ntime constant\nfor approx 1µs\nreset pulse\n
@@ -963,7 +952,7 @@ L Device:R R2
 U 1 1 5FBA8919
 P 3200 1950
 F 0 "R2" H 3270 1996 50  0000 L CNN
-F 1 "1k" H 3270 1905 50  0000 L CNN
+F 1 "8.2k" H 3270 1905 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3130 1950 50  0001 C CNN
 F 3 "~" H 3200 1950 50  0001 C CNN
 	1    3200 1950
@@ -1038,8 +1027,8 @@ Wire Wire Line
 	1850 950  1850 1100
 Wire Wire Line
 	1850 1200 1850 1350
-Text Notes 6400 3150 0    50   ~ 0
-NB to cope with slew rate \nof buffer as low as 0.6V/µs,\ndischarge R should be >=1111Ω\nand reset pulse needs to be \nat least 9µs i.e. Rt = 9kΩ\n
+Text Notes 5700 3650 0    50   ~ 0
+NB to cope with slew rate \nof buffer as slow as 0.6V/µs,\nR4 should be ≥ 1.666kΩ\n& reset pulse should be \n≥8µs for 5TC discharge
 Wire Wire Line
 	7350 4450 7350 4500
 Text Notes 7600 5450 0    50   ~ 0
@@ -1322,17 +1311,6 @@ Connection ~ 7000 3800
 Wire Wire Line
 	3500 5400 3600 5400
 $Comp
-L Device:R R15
-U 1 1 5FBD3FA1
-P 3350 5400
-F 0 "R15" V 3143 5400 50  0000 C CNN
-F 1 "3.3k" V 3234 5400 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3280 5400 50  0001 C CNN
-F 3 "~" H 3350 5400 50  0001 C CNN
-	1    3350 5400
-	0    1    1    0   
-$EndComp
-$Comp
 L Connector:TestPoint TP7
 U 1 1 5FBC30CE
 P 8500 2500
@@ -1356,4 +1334,30 @@ F 3 "~" H 8700 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 8500 4600
+Text Notes 6750 1400 0    59   ~ 0
+how to calibrate:\n1) adjust RV1 for 5kHz at TP1\n2) set scope to 100µs/div; trigger on falling edge, TP5; \n   adjust RV4 for 500µs high time at TP5. (about 23.5kΩ)\n3) adjust RV3 ccw to 908 Hz on TP5; \n   neg width should be about 600µs\n4) adjust RV3 cw to point where breaks to a stable 1000Hz on TP5; \n   note that the divider voltage is the integration of three high pulses \n   while reset is low. This step leaves the reset threshold \n   close to the end of the third clock pulse. The safe midpoint is 2.5 pulses. \n5) adjust RV3 cw so that the divider potential triggers reset \n   half way through the third pulse, i.e. half way through \n   the third rising slope. \n
+$Comp
+L Device:R R15
+U 1 1 5FBD3FA1
+P 3350 5400
+F 0 "R15" V 3143 5400 50  0000 C CNN
+F 1 "1k" V 3234 5400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3280 5400 50  0001 C CNN
+F 3 "~" H 3350 5400 50  0001 C CNN
+	1    3350 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5FBC7279
+P 800 2950
+F 0 "R6" H 870 2996 50  0000 L CNN
+F 1 "4.7k" H 870 2905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 730 2950 50  0001 C CNN
+F 3 "~" H 800 2950 50  0001 C CNN
+	1    800  2950
+	1    0    0    -1  
+$EndComp
+Text Notes 2150 900  0    50   ~ 0
+Circuit functions with Vcc\nas low as 3.8V
 $EndSCHEMATC
